@@ -46,12 +46,12 @@ def play_audio(url, player="mpv"):
         # Play the audio using the selected media player
         if player == "mpv":
             subprocess.call(["mpv", stream_url])
-        elif player == "mpplayer":
-            subprocess.call(["mpplayer", stream_url])
+        elif player == "mplayer":
+            subprocess.call(["mplayer", stream_url])
         elif player == "vlc":
             subprocess.call(["vlc", stream_url])
         else:
-            print("Invalid player selection. Supported players: mpv, mpplayer, vlc")
+            print("Invalid player selection. Supported players: mpv, mplayer, vlc")
 
     except Exception as e:
         print("An error occurred:", str(e))
@@ -72,7 +72,7 @@ if __name__ == "__main__":
                 selection = int(selection)
                 if 1 <= selection <= len(results):
                     selected_url = f"https://www.youtube.com/watch?v={results[selection - 1]['id']}"
-                    player = input("Select a media player (mpv, mpplayer, vlc): ").strip()
+                    player = input("Select a media player (mpv, mplayer, vlc): ").strip()
                     play_audio(selected_url, player)
                 else:
                     print("Invalid selection. Please enter a valid number.")
