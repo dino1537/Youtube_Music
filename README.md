@@ -47,3 +47,9 @@ This Python script utilizes the `rich`, `pytube`, and `youtubesearchpython` libr
    - Enter 'quit' to exit the script.
 
 This script provides an interactive and visually appealing way to search for YouTube videos and play their audio content with your preferred media player.
+
+
+![yt_music output](https://github.com/dino1537/Youtube_Music/assets/96822662/7afb42a3-263c-4f90-9072-0f2c82c1b161)
+
+![yt_music1_2023-09-17_10:12:22](https://github.com/dino1537/Youtube_Music/assets/96822662/c6a537b5-c601-4dd1-bb9e-8015c2cfe6f6)
+
